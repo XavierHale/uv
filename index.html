@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .secret a {
+    float: left;
+    font-size: 16px;
+    color: rgb(44, 42, 42);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {background-color: #04AA6D;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+#showMe {
+  animation: cssAnimation 0s 2s forwards;
+  visibility: hidden;
+}
+
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+
+.closebtn:hover {
+  color: black;
+}
+  </style>
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GSBY6FKHLP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GSBY6FKHLP');
+</script>
+  <body>
+  
+    <div class="navbar">
+      <a href="http://xavierhale.github.io/index.html">Home</a>
+      <a href="" onclick="myFunction()">News</a>
+      <div class="dropdown">
+        <button class="dropbtn">Downloads 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="http://xavierhale.github.io/dlpage.html">Games</a>
+          <a href="http://xavierhale.github.io/ems.html">Emulators</a>
+          <a href="" onclick="myFunction()">ROM files (coming soon)</a>
+          <a href="http://xavierhale.github.io/tools.html">Tools & Trolls</a>
+        </div>
+      </div> 
+      <a href="https://xavierhale.github.io/contact.html">Contact</a>
+    </div>
+<div style="padding-left:16px;"
+  <img src="logo.png" alt="ubg69420 tottaly legal free games by ya boi dead-x">
+
+<h2>By continuing, you agree that we are not responsible for any use of this site that gets you into trouble.</h2>
+<h2>If you are caught breaking rules with this site, remember these 3 rules:</h2>
+<h2>1. Admit nothing</h2>
+<h2>2. Deny everything</h2>
+<h2>3. Make counter-accusations</h2>
+<div id='showMe'>
+<a href="https:\\xavierhale.github.io/uvforreal.html">Agree and continue</a>
+</div>
+</div>
+  </body>
+<script>
+  function myFunction() {
+    alert("Oh No! It looks like this isn't implemented");
+  }
+  </script>
+
+<script>
+  var close = document.getElementsByClassName("closebtn");
+  var i;
+  
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+      var div = this.parentElement;
+      div.style.opacity = "0";
+      setTimeout(function(){ div.style.display = "none"; }, 100);
+    }
+  }
+  </script>
+
+</body>
+</html>
